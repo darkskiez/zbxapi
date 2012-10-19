@@ -24,9 +24,12 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class UserMedia < ZabbixAPI_Base
 end
 
 UserMedia.get
+end

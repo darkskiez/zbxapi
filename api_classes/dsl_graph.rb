@@ -24,8 +24,11 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class Graph < ZabbixAPI_Base
   actions :get, :create, :update, :delete
+end
 end

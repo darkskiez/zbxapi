@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class User < ZabbixAPI_Base
@@ -41,3 +43,4 @@ User.deletemedia
 User.authenticate
 User.login
 User.logout
+end

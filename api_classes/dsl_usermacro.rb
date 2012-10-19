@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class UserMacro < ZabbixAPI_Base
@@ -37,3 +39,4 @@ UserMacro.deletehostmacro
 UserMacro.massadd
 UserMacro.massupdate
 UserMacro.massremove
+end

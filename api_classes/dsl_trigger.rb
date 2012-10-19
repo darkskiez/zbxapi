@@ -26,6 +26,8 @@
 
 require "api_classes/api_dsl"
 
+module ZabbixAPI
+
 class Trigger < ZabbixAPI_Base
 end
 
@@ -46,3 +48,4 @@ Trigger.get do
 end
 Trigger.update
 
+end

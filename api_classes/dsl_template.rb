@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class Template < ZabbixAPI_Base
@@ -37,3 +39,4 @@ Template.delete
 Template.massadd
 Template.massupdate
 Template.massremove
+end

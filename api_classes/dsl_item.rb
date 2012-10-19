@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class Item < ZabbixAPI_Base
@@ -35,3 +37,4 @@ Item.exists
 Item.create
 Item.update
 Item.delete
+end

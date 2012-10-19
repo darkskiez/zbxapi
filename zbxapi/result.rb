@@ -26,6 +26,8 @@ require 'zbxapi/exceptions'
 #require 'json'
 require 'pp'
 
+module ZabbixAPI
+
 class ApiResult < Array
   include ZDebug
 
@@ -70,5 +72,7 @@ class ApiResult < Array
     return self.first[index] if index.is_a?(String)
     super(*args)
   end
+
+end
 
 end

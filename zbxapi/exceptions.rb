@@ -31,6 +31,8 @@ require 'zbxapi/zdebug'
 # This is the superclass for all Zabcon and ZabbixAPI exceptions.
 #
 #------------------------------------------------------------------------------
+module ZabbixAPI
+
 class ZError < RuntimeError
 
   include ZDebug
@@ -117,5 +119,7 @@ class ParseError < ZError
 end
 
 class ReturnError < ZError
+
+end
 
 end

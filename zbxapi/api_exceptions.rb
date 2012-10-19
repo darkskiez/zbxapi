@@ -39,6 +39,7 @@ require 'zbxapi/exceptions'
 # Exception class for bad authentication information
 #
 #------------------------------------------------------------------------------
+module ZabbixAPI
 
 class ZbxAPI_ExceptionBadAuth < ZError
 end
@@ -123,4 +124,6 @@ end
 #------------------------------------------------------------------------------
 
 class ZbxAPI_GeneralError < ZError
+end
+
 end

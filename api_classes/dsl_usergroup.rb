@@ -26,6 +26,8 @@
 
 require "api_classes/api_dsl"
 
+module ZabbixAPI
+
 class UserGroup < ZabbixAPI_Base
 end
 
@@ -37,3 +39,5 @@ UserGroup.delete
 UserGroup.massadd
 UserGroup.massupdate
 UserGroup.massremove
+
+end

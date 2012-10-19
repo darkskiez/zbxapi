@@ -27,6 +27,8 @@
 require "zbxapi/zdebug"
 require "zbxapi/exceptions"
 
+module ZabbixAPI
+
 class ZabbixAPI_Method
   include ZDebug
 
@@ -305,4 +307,5 @@ class ZabbixAPI_Base
   end
 end
 
+end
 

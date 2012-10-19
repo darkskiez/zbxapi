@@ -1,4 +1,5 @@
 require "api_classes/api_dsl"
+module ZabbixAPI
 
 class Host < ZabbixAPI_Base
   actions :update, :massAdd, :massUpdate, :massRemove
@@ -45,5 +46,5 @@ class Host < ZabbixAPI_Base
       retval
     end
   end
-
+end
 end

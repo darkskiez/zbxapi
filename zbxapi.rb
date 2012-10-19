@@ -26,6 +26,8 @@
 
 #TODO Create class to capture resultant data
 
+module ZabbixAPI
+
 class ZabbixAPI  #create a stub to be defined later
 end
 
@@ -406,5 +408,7 @@ if __FILE__ == $0
   #zbx.set_proxy("localhost",3128)
   zbx.login("user","password")
   pp zbx.host.get("output"=>"extend")
+
+end
 
 end

@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class History < ZabbixAPI_Base
@@ -31,3 +33,4 @@ end
 
 History.get
 History.delete
+end

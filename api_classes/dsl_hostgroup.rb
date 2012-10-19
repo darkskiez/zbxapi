@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class HostGroup < ZabbixAPI_Base
@@ -38,3 +40,4 @@ HostGroup.delete
 HostGroup.massadd
 HostGroup.massupdate
 HostGroup.massremove
+end

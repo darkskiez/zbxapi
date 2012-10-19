@@ -24,6 +24,8 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class Event < ZabbixAPI_Base
@@ -32,3 +34,4 @@ end
 Event.get
 Event.acknowledge
 Event.delete
+end

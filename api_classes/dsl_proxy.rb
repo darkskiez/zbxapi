@@ -24,9 +24,12 @@
 ##########################################
 #++
 
+module ZabbixAPI
+
 require "api_classes/api_dsl"
 
 class Proxy < ZabbixAPI_Base
 end
 
 Proxy.get
+end
