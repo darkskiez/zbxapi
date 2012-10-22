@@ -115,8 +115,8 @@ class ZabbixAPI
 
     #Generate the list of sub objects dynamically, from all objects
     #derived from ZabbixAPI_Base
-    objects=Object.constants.map do |i|
-      obj=Object.const_get(i.intern)
+    objects=::ZabbixAPI.constants.map do |i|
+      obj=::ZabbixAPI.const_get(i.intern)
       if obj.is_a?(Class) && ([ZabbixAPI_Base]-obj.ancestors).empty?
         obj
       else
@@ -127,7 +127,7 @@ class ZabbixAPI
     @objects={}
 
     objects.each do |i|
-      i_s=i.to_s.downcase.intern
+      i_s=i.to_s.gsub(/^.*::/, '').downcase.intern
       @objects[i_s]=i.new(self)
       self.class.define_method(i_s) do
         instance_variable_get(:@objects)[i_s]
@@ -287,7 +287,6 @@ class ZabbixAPI
     checkauth
     checkversion(1,1)
     params={} if params==nil
-
     obj=do_request(json_obj(method,params))
     return obj['result']
   end

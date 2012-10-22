@@ -290,7 +290,7 @@ class ZabbixAPI_Base
 
   def self.add(sym,&block)
     @api_methods={} if @api_methods.nil?
-    @api_methods[sym]=ZabbixAPI_Method.new(self.to_s,sym.to_s)
+    @api_methods[sym]=ZabbixAPI_Method.new(self.to_s.gsub(/^.*::/, ''), sym.to_s)
     @api_methods[sym].instance_eval(&block) if !block.nil?
 
     #Create a method definition for the parameter in question.
