@@ -20,7 +20,8 @@ class Host < ZabbixAPI_Base
                              "searchWildcardsEnabled","output","select_groups","selectParentTemplates",
                              "select_items","select_triggers","select_graphs","select_applications",
                              "select_macros","select_profile","countOutput","groupOutput",
-                             "preservekeys","sortfield","sortorder","limit","extendoutput"]
+                             "preservekeys","sortfield","sortorder","limit","extendoutput",
+                             "selectInterfaces", "selectInventory", "selectItems" ]
   end
 
   action :exists do
