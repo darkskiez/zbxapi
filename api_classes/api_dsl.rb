@@ -137,9 +137,7 @@ class ZabbixAPI_Method
     debug(8,:msg=>"Server Version", :var=>server_version)
     var=params.is_a?(Hash) ? params.keys : params
     debug(8,:msg=>"Param keys", :var=>var)
-    p server_version.inspect
     valid_params=get_valid_params(server_version)
-    p valid_params.inspect
     if valid_params  #continue to see if there's a required param
       raise ArgumentError.new("Named Arguments (Hash) expected for #{@apiclass}.#{@apimethod},"\
                               " '#{params.class}' received: #{params.inspect}") if !params.is_a?(Hash)
