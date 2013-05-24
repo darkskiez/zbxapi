@@ -19,8 +19,8 @@
 #--
 ##########################################
 # Subversion information
-# $Id: dsl_proxy.rb 395 2012-05-18 03:49:48Z nelsonab $
-# $Revision: 395 $
+# $Id: dsl_user.rb 339 2011-10-14 18:57:38Z nelsonab $
+# $Revision: 339 $
 ##########################################
 #++
 
@@ -28,14 +28,10 @@ module ZabbixAPI
 
 require "api_classes/api_dsl"
 
-class Proxy < ZabbixAPI_Base
+class Dcheck < ZabbixAPI_Base
+
 end
 
-Proxy.get
-Proxy.create
-Proxy.delete
-Proxy.isreadable
-Proxy.iswritable
-Proxy.update
+Dcheck.get
 
 end

@@ -16,26 +16,20 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-#--
-##########################################
-# Subversion information
-# $Id: dsl_proxy.rb 395 2012-05-18 03:49:48Z nelsonab $
-# $Revision: 395 $
-##########################################
-#++
-
 module ZabbixAPI
 
 require "api_classes/api_dsl"
 
-class Proxy < ZabbixAPI_Base
+class Drule < ZabbixAPI_Base
+
 end
 
-Proxy.get
-Proxy.create
-Proxy.delete
-Proxy.isreadable
-Proxy.iswritable
-Proxy.update
+Drule.create
+Drule.delete
+Drule.exists
+Drule.get
+Drule.isreadable
+Drule.iswritable
+Drule.update
 
 end
