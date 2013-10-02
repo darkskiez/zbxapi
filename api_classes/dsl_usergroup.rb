@@ -39,5 +39,8 @@ UserGroup.delete
 UserGroup.massadd
 UserGroup.massupdate
 UserGroup.massremove
+UserGroup.getobjects
+UserGroup.isreadable
+UserGroup.iswriteable
 
 end
